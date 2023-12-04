@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/e6b8371d90.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Header section -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 style="color: red; font-size: 45px;font-family: 'poppins', sans-serif;">A<span style="color: white;">THARVA J.</span></h1>
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Projects</a></li>
+                    <li><a href="#works">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                
+                <h1>
+                    Hi, I'm <span>Atharva</span> <br />
+                    Jagtap 
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="assets/images/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>A passionate developer with strong analytical skills and problem
+                        solving abilities, looking to leverage my knowledge and passion to
+                        contribute further in the developement of great products.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                       
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>PROGRAMMING LANGUAGES</span><br>HTML, CSS, CPP,  </li>
+                            <li><span>DATABASE</span><br>My SQL</li>
+                            <li><span>TOOLS</span><br>Git , Aras </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>INTERNSHIP / MARTIAN PROGRAM</span><br><br>- Persistent Systems (05/2022 - 06/2022)<br><br>-Provided with the modules of CPP , DBMS ,<br>OOP followed by
+                                assesments. </li>
+                            
+                        </ul>
+                        <br>
+                        <ul>
+                            <li><span>INTERNSHIP</span><br><br>- SteepGraph Systems Pvt Ltd (09/2023 - Present)<br><br>- Fundamental concepts of PLM , Aras Innovator Configuration, <br>    Innovator Object Model Basics
+                                 </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023 - PCET NMIET PUNE </span> <br>BE COMPUTER - 8.4 CGPA</li>
+                            <li><span>2018 - KENDRIYA VIDYALA NO.1 DEHUROAD PUNE </span><br>HSC - 72%</li>
+                            <li><span>2016 - KENDRIYA VIDYALA NO.1 DEHUROAD PUNE  </span><br>SSC - 8.4/10 CGPA<br></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services section -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Bank management System</h2>
+                    <p>A bank management system with modules of Create , View ,Delete Update , Withdraw amount ,Deposit Amount.</p>
+                    
+                </div>
+                <div>
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h2>Personal Portfolio Website</h2>
+                    <p>A personal portfolio website made with HTML CSS. You are currently surfing on this.</p>
+                    
+                </div>
+               
+            </div>
+        </div>
+    </div>
+
+        <!-- Works section -->
+        <div id="works">
+            <div class="container">
+                <h1 class="sub-title">My Experience</h1>
+                <div class="works-list">
+                    <div class="work">
+                        <img src="assets/images/work-1.png" alt="work-1">
+                        <div class="layer">
+                            <h3>Persistent Systems</h3>
+                            <h4>(05/2022 - 06/2022)</h4>
+                            <br>
+                            <p>Provided with the modules of CPP , DBMS ,OOP followed by
+                                assesments.</p>
+                            <a href="https://github.com/atharvajgtp/Portfolio/blob/main/Persistent%20Certificate.jpg"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="assets/images/work-2.png" alt="work-2">
+                        <div class="layer">
+                            <h3>SteepGraph Systems Pvt Ltd</h3>
+                            <h4>(09/2023 - Present)</h4>
+                            <br>
+                            <p> Fundamental concepts of PLM , Aras Innovator Configuration,
+                                Innovator Object Model Basics</p>
+                            <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    
+    <!-- Contact section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>atharvajagtapofficial@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone-flip"></i>+91-9763688370</p>
+                    <div class="social-icons">
+                        
+                        <a href="https://github.com/atharvajgtp"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="assets/my-cv.pdf" class="btn btn2" download>Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+           
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+
+    </script>
+</body>
+
+</html>
